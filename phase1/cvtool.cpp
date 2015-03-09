@@ -101,17 +101,28 @@ void CVTool::detectFeatureHaris(std::vector<cv::KeyPoint>& keypoints1, std::vect
 }
 
 void CVTool::matchFeatures(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2){
+	int size1 = keypoints1.size();
+	int size2 = keypoints2.size();
+	// Nearest Neighbour matching of keypoints1 to keypoints2
+	for (int idx1 = 0; idx1 < size1; idx1++) {
+		for (int idx2 = 0; idx2 < size1; idx2++) {
+			// TODO: study notes on what is approximation/enumeration method...
+		}
+	}
 }
 
 void CVTool::visualizeMatching(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2){
 	Mat out1, out2;
 	drawKeypoints(image1_, keypoints1, out1);
 	drawKeypoints(image2_, keypoints1, out2);
+	/*
 	imshow("Image 1", out1);
 	imshow("image 2", out2);
 	waitKey();
 	destroyWindow("Image 1");
 	destroyWindow("Image 2");
+	*/
+
 }
 
 Mat CVTool::repairImage(const cv::Mat & damaged_img_a, const cv::Mat & complete_img_b){
