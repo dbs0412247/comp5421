@@ -1,10 +1,15 @@
 #include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
 #include <opencv2/features2d/features2d.hpp>
+#include <opencv2/nonfree/nonfree.hpp>
 #include <opencv2/nonfree/features2d.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
+#include <vector>
+#include <string>
 
 #ifndef CVTOOL_H
 #define CVTOOL_H
+
 
 /**
  * @brief The CVTool class
@@ -16,24 +21,24 @@
 class CVTool
 {
 public:
-    CVTool();
+
+    CVTool(std::string path_to_image1, std::string path_to_image2);
+    CVTool(const cv::Mat & image1, const cv::Mat & image2);
     /**
-     * @brief for function 1.
+     * @brief detectFeatureSIFT takes an image and
+     *
      */
-    void detectFeatureSIFT();
-
-    void detectFeatureSURF();
-
-    void detectFeatureMSER();
-
-    void detectFeatureHaris();
+    void detectFeatureSIFT(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2);
+    void detectFeatureSURF(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2);
+    void detectFeatureMSER(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2);
+    void detectFeatureHaris(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2);
 
     /**
      * @brief for function 2.
      */
-    void matchFeatures();
+    void matchFeatures(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2);
 
-    void visualizeMatching();
+    void visualizeMatching(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2);
 
 
     /**
@@ -69,7 +74,7 @@ protected:
      * @brief image1_, image2_ are the two input images for testing
      */
     cv::Mat image1_, image2_;
-
+/*
     int 		m_sift_nfeatures;
 		int 		m_sift_nOctaveLayers;
 		double 	m_sift_contrastThreshold;
@@ -99,6 +104,10 @@ protected:
 		int m_harris_ksize;
 		double m_harris_k;
 		int m_harris_borderType;
+*/
+
+
+    cv::MserFeatureDetector m_mser;
 };
 
 #endif // CVTOOL_H

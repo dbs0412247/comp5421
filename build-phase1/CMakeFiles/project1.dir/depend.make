@@ -4,6 +4,7 @@
 CMakeFiles/project1.dir/cvtool.cpp.o: /home/adrian/comp5421/phase1/cvtool.cpp
 CMakeFiles/project1.dir/cvtool.cpp.o: /home/adrian/comp5421/phase1/cvtool.h
 CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/core/core.hpp
+CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/core/core_c.h
 CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/core/mat.hpp
 CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/core/operations.hpp
 CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/core/types_c.h
@@ -12,7 +13,12 @@ CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/features2d/feat
 CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/flann/config.h
 CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/flann/defines.h
 CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/flann/miniflann.hpp
+CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/highgui/highgui.hpp
+CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/highgui/highgui_c.h
+CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/imgproc/imgproc.hpp
+CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/imgproc/types_c.h
 CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/nonfree/features2d.hpp
+CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/nonfree/nonfree.hpp
 
 CMakeFiles/project1.dir/main.cpp.o: /home/adrian/comp5421/phase1/cvtool.h
 CMakeFiles/project1.dir/main.cpp.o: /home/adrian/comp5421/phase1/main.cpp
@@ -28,5 +34,8 @@ CMakeFiles/project1.dir/main.cpp.o: /usr/local/include/opencv2/flann/defines.h
 CMakeFiles/project1.dir/main.cpp.o: /usr/local/include/opencv2/flann/miniflann.hpp
 CMakeFiles/project1.dir/main.cpp.o: /usr/local/include/opencv2/highgui/highgui.hpp
 CMakeFiles/project1.dir/main.cpp.o: /usr/local/include/opencv2/highgui/highgui_c.h
+CMakeFiles/project1.dir/main.cpp.o: /usr/local/include/opencv2/imgproc/imgproc.hpp
+CMakeFiles/project1.dir/main.cpp.o: /usr/local/include/opencv2/imgproc/types_c.h
 CMakeFiles/project1.dir/main.cpp.o: /usr/local/include/opencv2/nonfree/features2d.hpp
+CMakeFiles/project1.dir/main.cpp.o: /usr/local/include/opencv2/nonfree/nonfree.hpp
 

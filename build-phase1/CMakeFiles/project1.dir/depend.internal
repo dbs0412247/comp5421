@@ -5,6 +5,7 @@ CMakeFiles/project1.dir/cvtool.cpp.o
  /home/adrian/comp5421/phase1/cvtool.cpp
  /home/adrian/comp5421/phase1/cvtool.h
  /usr/local/include/opencv2/core/core.hpp
+ /usr/local/include/opencv2/core/core_c.h
  /usr/local/include/opencv2/core/mat.hpp
  /usr/local/include/opencv2/core/operations.hpp
  /usr/local/include/opencv2/core/types_c.h
@@ -13,7 +14,12 @@ CMakeFiles/project1.dir/cvtool.cpp.o
  /usr/local/include/opencv2/flann/config.h
  /usr/local/include/opencv2/flann/defines.h
  /usr/local/include/opencv2/flann/miniflann.hpp
+ /usr/local/include/opencv2/highgui/highgui.hpp
+ /usr/local/include/opencv2/highgui/highgui_c.h
+ /usr/local/include/opencv2/imgproc/imgproc.hpp
+ /usr/local/include/opencv2/imgproc/types_c.h
  /usr/local/include/opencv2/nonfree/features2d.hpp
+ /usr/local/include/opencv2/nonfree/nonfree.hpp
 CMakeFiles/project1.dir/main.cpp.o
  /home/adrian/comp5421/phase1/cvtool.h
  /home/adrian/comp5421/phase1/main.cpp
@@ -29,4 +35,7 @@ CMakeFiles/project1.dir/main.cpp.o
  /usr/local/include/opencv2/flann/miniflann.hpp
  /usr/local/include/opencv2/highgui/highgui.hpp
  /usr/local/include/opencv2/highgui/highgui_c.h
+ /usr/local/include/opencv2/imgproc/imgproc.hpp
+ /usr/local/include/opencv2/imgproc/types_c.h
  /usr/local/include/opencv2/nonfree/features2d.hpp
+ /usr/local/include/opencv2/nonfree/nonfree.hpp
