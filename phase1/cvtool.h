@@ -69,6 +69,8 @@ protected:
     /**
       * You can add any protected function to help.
       */
+    double computeEuclideanDistance(cv::Point2f a, cv::Point2f b);
+
 protected:
     /**
      * @brief image1_, image2_ are the two input images for testing

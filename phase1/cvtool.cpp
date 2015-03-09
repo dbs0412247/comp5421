@@ -103,12 +103,16 @@ void CVTool::detectFeatureHaris(std::vector<cv::KeyPoint>& keypoints1, std::vect
 void CVTool::matchFeatures(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2){
 	int size1 = keypoints1.size();
 	int size2 = keypoints2.size();
+	vector < vector< double > > distance (size1);
 	// Nearest Neighbour matching of keypoints1 to keypoints2
 	for (int idx1 = 0; idx1 < size1; idx1++) {
-		for (int idx2 = 0; idx2 < size1; idx2++) {
-			// TODO: study notes on what is approximation/enumeration method...
+		for (int idx2 = 0; idx2 < size2; idx2++) {
+			distance[idx1] = vector<double>(size2);
+
+			distance[idx1][idx2] = computeEuclideanDistance(keypoints1[idx1].pt, keypoints2[idx2].pt);
 		}
 	}
+	// TODO: study notes on what is approximation/enumeration method...
 }
 
 void CVTool::visualizeMatching(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2){
@@ -139,4 +143,8 @@ void CVTool::computeFundMatrix(){
 
 void CVTool::visualizeEpipolarLine(){
 
+}
+
+double computeEuclideanDistance(cv::Point2f a, cv::Point2f b) {
+	return sqrt( (a.x-b.x)*(a.x-b.x) + (a.y-b.y)*(a.y-b.y) );
 }
