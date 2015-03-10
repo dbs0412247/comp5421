@@ -145,6 +145,6 @@ void CVTool::visualizeEpipolarLine(){
 
 }
 
-double computeEuclideanDistance(cv::Point2f a, cv::Point2f b) {
+double CVTool::computeEuclideanDistance(cv::Point2f a, cv::Point2f b) {
 	return sqrt( (a.x-b.x)*(a.x-b.x) + (a.y-b.y)*(a.y-b.y) );
 }
