@@ -33,13 +33,20 @@ public:
     void detectFeatureMSER(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2);
     void detectFeatureHaris(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2);
 
-    /**
+    /*
      * @brief for function 2.
      */
-    void matchFeatures(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2);
+    void matchFeatures(
+    		std::vector<cv::KeyPoint>& keypoints1,
+    		std::vector<cv::KeyPoint>& keypoints2,
+				cv::Mat& descriptors1, cv::Mat& descriptors2,
+				std::vector< std::vector<cv::DMatch> >& matches) ;
 
-    void visualizeMatching(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2);
-
+    void visualizeMatching(
+    		const std::vector<cv::KeyPoint>& keypoints1,
+        const std::vector<cv::KeyPoint>& keypoints2,
+        const std::vector< std::vector<cv::DMatch> >& matches,
+				cv::Mat& img_matches);
 
     /**
      * @brief repairImage

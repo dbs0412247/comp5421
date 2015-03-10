@@ -135,7 +135,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=build_dataset
+CMAKE_PROJECT_NAME:STATIC=comp5421-p1
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -313,6 +313,12 @@ build_dataset_BINARY_DIR:STATIC=/home/adrian/comp5421/build-phase1
 
 //Value Computed by CMake
 build_dataset_SOURCE_DIR:STATIC=/home/adrian/comp5421/phase1
+
+//Value Computed by CMake
+comp5421-p1_BINARY_DIR:STATIC=/home/adrian/comp5421/build-phase1
+
+//Value Computed by CMake
+comp5421-p1_SOURCE_DIR:STATIC=/home/adrian/comp5421/phase1
 
 
 ########################

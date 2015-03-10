@@ -100,7 +100,11 @@ void CVTool::detectFeatureHaris(std::vector<cv::KeyPoint>& keypoints1, std::vect
 	harris->detect(image2_, keypoints2, Mat());
 }
 
-void CVTool::matchFeatures(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2){
+void CVTool::matchFeatures(  vector<KeyPoint>& keypoints1,
+		                         vector<KeyPoint>& keypoints2,
+														 Mat& descriptors1, Mat& descriptors2,
+														 vector< vector<DMatch> >& matches){
+	/*
 	int size1 = keypoints1.size();
 	int size2 = keypoints2.size();
 	vector < vector< double > > distance (size1);
@@ -108,25 +112,23 @@ void CVTool::matchFeatures(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv
 	for (int idx1 = 0; idx1 < size1; idx1++) {
 		for (int idx2 = 0; idx2 < size2; idx2++) {
 			distance[idx1] = vector<double>(size2);
-
 			distance[idx1][idx2] = computeEuclideanDistance(keypoints1[idx1].pt, keypoints2[idx2].pt);
 		}
 	}
-	// TODO: study notes on what is approximation/enumeration method...
+	*/
+	Ptr<DescriptorExtractor> sift_extractor = DescriptorExtractor::create("SIFT");
+	sift_extractor->compute(image1_, keypoints1, descriptors1);
+	sift_extractor->compute(image2_, keypoints2, descriptors2);
+
+	BFMatcher matcher(NORM_L2, true);
+	matcher.knnMatch( descriptors1, descriptors2, matches, 1);
 }
 
-void CVTool::visualizeMatching(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2){
-	Mat out1, out2;
-	drawKeypoints(image1_, keypoints1, out1);
-	drawKeypoints(image2_, keypoints1, out2);
-	/*
-	imshow("Image 1", out1);
-	imshow("image 2", out2);
-	waitKey();
-	destroyWindow("Image 1");
-	destroyWindow("Image 2");
-	*/
-
+void CVTool::visualizeMatching(	const vector<KeyPoint>& keypoints1,
+		                            const vector<KeyPoint>& keypoints2,
+		                            const vector< vector<DMatch> >& matches,
+																Mat& img_matches){
+	drawMatches( image1_, keypoints1, image2_, keypoints2, matches, img_matches );
 }
 
 Mat CVTool::repairImage(const cv::Mat & damaged_img_a, const cv::Mat & complete_img_b){

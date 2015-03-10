@@ -46,11 +46,10 @@ int main() {
 	// keyPoints
 	vector<KeyPoint> keypoints_harris1, keypoints_harris2;
 
-
 	// Run feature detectors
 	CVTool m_cvtool (a_complete, b);
 	m_cvtool.detectFeatureSIFT(keypoints_harris1, keypoints_harris2);
-	m_cvtool.visualizeMatching(keypoints_harris1, keypoints_harris2);
+	m_cvtool.detectFeatureSIFT(keypoints_harris1, keypoints_harris2);
 
 	return 0;
 }
