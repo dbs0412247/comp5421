@@ -267,8 +267,16 @@
 <pathentry kind="mac" name="__GXX_RTTI" path="" value="1"/>
 <pathentry kind="mac" name="__EXCEPTIONS" path="" value="1"/>
 <pathentry kind="mac" name="_GNU_SOURCE" path="" value="1"/>
+<pathentry include="/home/adrian/comp5421/build-phase1" kind="inc" path="" system="true"/>
+<pathentry include="/home/adrian/comp5421/phase1" kind="inc" path="" system="true"/>
 <pathentry include="/usr/local/include/opencv" kind="inc" path="" system="true"/>
 <pathentry include="/usr/local/include" kind="inc" path="" system="true"/>
+<pathentry include="/home/adrian/comp5421/phase1/ui" kind="inc" path="" system="true"/>
+<pathentry include="/usr/include/qt5" kind="inc" path="" system="true"/>
+<pathentry include="/usr/include/qt5/QtWidgets" kind="inc" path="" system="true"/>
+<pathentry include="/usr/include/qt5/QtGui" kind="inc" path="" system="true"/>
+<pathentry include="/usr/include/qt5/QtCore" kind="inc" path="" system="true"/>
+<pathentry include="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64" kind="inc" path="" system="true"/>
 <pathentry include="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" kind="inc" path="" system="true"/>
 <pathentry include="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" kind="inc" path="" system="true"/>
 <pathentry include="/usr/include/x86_64-linux-gnu" kind="inc" path="" system="true"/>
@@ -311,6 +319,13 @@
 <buildCommand>/usr/bin/cmake</buildCommand>
 <buildArguments>-E chdir "/home/adrian/comp5421/build-phase1" "/usr/bin/cmake" -P "CMakeFiles/project1.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name=": project1_automoc" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments>-j8</buildArguments>
+<buildTarget>project1_automoc</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
@@ -377,6 +392,48 @@
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
+<target name="[obj] project1_automoc.cpp.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments>-j8</buildArguments>
+<buildTarget>project1_automoc.cpp.o</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[pre] project1_automoc.cpp.i" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments>-j8</buildArguments>
+<buildTarget>project1_automoc.cpp.i</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[to asm] project1_automoc.cpp.s" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments>-j8</buildArguments>
+<buildTarget>project1_automoc.cpp.s</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[obj] ui/mainwindow.cpp.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments>-j8</buildArguments>
+<buildTarget>ui/mainwindow.cpp.o</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[pre] ui/mainwindow.cpp.i" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments>-j8</buildArguments>
+<buildTarget>ui/mainwindow.cpp.i</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[to asm] ui/mainwindow.cpp.s" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>/usr/bin/make</buildCommand>
+<buildArguments>-j8</buildArguments>
+<buildTarget>ui/mainwindow.cpp.s</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
 </buildTargets>
 </storageModule>
 <storageModule moduleId="scannerConfiguration">
@@ -405,6 +462,6 @@
 </cconfiguration>
 </storageModule>
 <storageModule moduleId="cdtBuildSystem" version="4.0.0">
-<project id="build_dataset.null.1" name="build_dataset"/>
+<project id="comp5421-p1.null.1" name="comp5421-p1"/>
 </storageModule>
 </cproject>

@@ -52,9 +52,14 @@ include CMakeFiles/project1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/project1.dir/flags.make
 
+ui_mainwindow.h: /home/adrian/comp5421/phase1/ui/mainwindow.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/adrian/comp5421/build-phase1/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_mainwindow.h"
+	/usr/lib/x86_64-linux-gnu/qt5/bin/uic -o /home/adrian/comp5421/build-phase1/ui_mainwindow.h /home/adrian/comp5421/phase1/ui/mainwindow.ui
+
 CMakeFiles/project1.dir/main.cpp.o: CMakeFiles/project1.dir/flags.make
 CMakeFiles/project1.dir/main.cpp.o: /home/adrian/comp5421/phase1/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/adrian/comp5421/build-phase1/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/adrian/comp5421/build-phase1/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/project1.dir/main.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/project1.dir/main.cpp.o -c /home/adrian/comp5421/phase1/main.cpp
 
@@ -77,7 +82,7 @@ CMakeFiles/project1.dir/main.cpp.o.provides.build: CMakeFiles/project1.dir/main.
 
 CMakeFiles/project1.dir/cvtool.cpp.o: CMakeFiles/project1.dir/flags.make
 CMakeFiles/project1.dir/cvtool.cpp.o: /home/adrian/comp5421/phase1/cvtool.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/adrian/comp5421/build-phase1/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/adrian/comp5421/build-phase1/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/project1.dir/cvtool.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/project1.dir/cvtool.cpp.o -c /home/adrian/comp5421/phase1/cvtool.cpp
 
@@ -98,16 +103,66 @@ CMakeFiles/project1.dir/cvtool.cpp.o.provides: CMakeFiles/project1.dir/cvtool.cp
 
 CMakeFiles/project1.dir/cvtool.cpp.o.provides.build: CMakeFiles/project1.dir/cvtool.cpp.o
 
+CMakeFiles/project1.dir/ui/mainwindow.cpp.o: CMakeFiles/project1.dir/flags.make
+CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /home/adrian/comp5421/phase1/ui/mainwindow.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/adrian/comp5421/build-phase1/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/project1.dir/ui/mainwindow.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/project1.dir/ui/mainwindow.cpp.o -c /home/adrian/comp5421/phase1/ui/mainwindow.cpp
+
+CMakeFiles/project1.dir/ui/mainwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project1.dir/ui/mainwindow.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/adrian/comp5421/phase1/ui/mainwindow.cpp > CMakeFiles/project1.dir/ui/mainwindow.cpp.i
+
+CMakeFiles/project1.dir/ui/mainwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project1.dir/ui/mainwindow.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/adrian/comp5421/phase1/ui/mainwindow.cpp -o CMakeFiles/project1.dir/ui/mainwindow.cpp.s
+
+CMakeFiles/project1.dir/ui/mainwindow.cpp.o.requires:
+.PHONY : CMakeFiles/project1.dir/ui/mainwindow.cpp.o.requires
+
+CMakeFiles/project1.dir/ui/mainwindow.cpp.o.provides: CMakeFiles/project1.dir/ui/mainwindow.cpp.o.requires
+	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/ui/mainwindow.cpp.o.provides.build
+.PHONY : CMakeFiles/project1.dir/ui/mainwindow.cpp.o.provides
+
+CMakeFiles/project1.dir/ui/mainwindow.cpp.o.provides.build: CMakeFiles/project1.dir/ui/mainwindow.cpp.o
+
+CMakeFiles/project1.dir/project1_automoc.cpp.o: CMakeFiles/project1.dir/flags.make
+CMakeFiles/project1.dir/project1_automoc.cpp.o: project1_automoc.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/adrian/comp5421/build-phase1/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/project1.dir/project1_automoc.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/project1.dir/project1_automoc.cpp.o -c /home/adrian/comp5421/build-phase1/project1_automoc.cpp
+
+CMakeFiles/project1.dir/project1_automoc.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project1.dir/project1_automoc.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/adrian/comp5421/build-phase1/project1_automoc.cpp > CMakeFiles/project1.dir/project1_automoc.cpp.i
+
+CMakeFiles/project1.dir/project1_automoc.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project1.dir/project1_automoc.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/adrian/comp5421/build-phase1/project1_automoc.cpp -o CMakeFiles/project1.dir/project1_automoc.cpp.s
+
+CMakeFiles/project1.dir/project1_automoc.cpp.o.requires:
+.PHONY : CMakeFiles/project1.dir/project1_automoc.cpp.o.requires
+
+CMakeFiles/project1.dir/project1_automoc.cpp.o.provides: CMakeFiles/project1.dir/project1_automoc.cpp.o.requires
+	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/project1_automoc.cpp.o.provides.build
+.PHONY : CMakeFiles/project1.dir/project1_automoc.cpp.o.provides
+
+CMakeFiles/project1.dir/project1_automoc.cpp.o.provides.build: CMakeFiles/project1.dir/project1_automoc.cpp.o
+
 # Object files for target project1
 project1_OBJECTS = \
 "CMakeFiles/project1.dir/main.cpp.o" \
-"CMakeFiles/project1.dir/cvtool.cpp.o"
+"CMakeFiles/project1.dir/cvtool.cpp.o" \
+"CMakeFiles/project1.dir/ui/mainwindow.cpp.o" \
+"CMakeFiles/project1.dir/project1_automoc.cpp.o"
 
 # External object files for target project1
 project1_EXTERNAL_OBJECTS =
 
 project1: CMakeFiles/project1.dir/main.cpp.o
 project1: CMakeFiles/project1.dir/cvtool.cpp.o
+project1: CMakeFiles/project1.dir/ui/mainwindow.cpp.o
+project1: CMakeFiles/project1.dir/project1_automoc.cpp.o
 project1: CMakeFiles/project1.dir/build.make
 project1: /usr/local/lib/libopencv_videostab.so.2.4.11
 project1: /usr/local/lib/libopencv_video.so.2.4.11
@@ -127,6 +182,7 @@ project1: /usr/local/lib/libopencv_features2d.so.2.4.11
 project1: /usr/local/lib/libopencv_core.so.2.4.11
 project1: /usr/local/lib/libopencv_contrib.so.2.4.11
 project1: /usr/local/lib/libopencv_calib3d.so.2.4.11
+project1: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.2.1
 project1: /usr/local/lib/libopencv_nonfree.so.2.4.11
 project1: /usr/local/lib/libopencv_gpu.so.2.4.11
 project1: /usr/local/lib/libopencv_photo.so.2.4.11
@@ -138,6 +194,9 @@ project1: /usr/local/lib/libopencv_calib3d.so.2.4.11
 project1: /usr/local/lib/libopencv_features2d.so.2.4.11
 project1: /usr/local/lib/libopencv_highgui.so.2.4.11
 project1: /usr/local/lib/libopencv_imgproc.so.2.4.11
+project1: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.2.1
+project1: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.2.1
+project1: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.2.1
 project1: /usr/local/lib/libopencv_flann.so.2.4.11
 project1: /usr/local/lib/libopencv_core.so.2.4.11
 project1: CMakeFiles/project1.dir/link.txt
@@ -150,13 +209,15 @@ CMakeFiles/project1.dir/build: project1
 
 CMakeFiles/project1.dir/requires: CMakeFiles/project1.dir/main.cpp.o.requires
 CMakeFiles/project1.dir/requires: CMakeFiles/project1.dir/cvtool.cpp.o.requires
+CMakeFiles/project1.dir/requires: CMakeFiles/project1.dir/ui/mainwindow.cpp.o.requires
+CMakeFiles/project1.dir/requires: CMakeFiles/project1.dir/project1_automoc.cpp.o.requires
 .PHONY : CMakeFiles/project1.dir/requires
 
 CMakeFiles/project1.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/project1.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/project1.dir/clean
 
-CMakeFiles/project1.dir/depend:
+CMakeFiles/project1.dir/depend: ui_mainwindow.h
 	cd /home/adrian/comp5421/build-phase1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/adrian/comp5421/phase1 /home/adrian/comp5421/phase1 /home/adrian/comp5421/build-phase1 /home/adrian/comp5421/build-phase1 /home/adrian/comp5421/build-phase1/CMakeFiles/project1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/project1.dir/depend
 

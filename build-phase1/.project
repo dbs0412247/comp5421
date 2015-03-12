@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>build_dataset@build-phase1</name>
+	<name>comp5421-p1@build-phase1</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -119,7 +119,7 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Subprojects]/build_dataset</name>
+			<name>[Subprojects]/comp5421-p1</name>
 			<type>2</type>
 			<location>/home/adrian/comp5421/phase1</location>
 		</link>
@@ -139,6 +139,11 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>[Targets]/[exe] project1//mainwindow.ui</name>
+			<type>1</type>
+			<location>/home/adrian/comp5421/phase1/ui/mainwindow.ui</location>
+		</link>
+		<link>
 			<name>[Targets]/[exe] project1/Source Files</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
@@ -154,9 +159,24 @@
 			<location>/home/adrian/comp5421/phase1/cvtool.cpp</location>
 		</link>
 		<link>
+			<name>[Targets]/[exe] project1/Source Files/mainwindow.cpp</name>
+			<type>1</type>
+			<location>/home/adrian/comp5421/phase1/ui/mainwindow.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] project1/Source Files/project1_automoc.cpp</name>
+			<type>1</type>
+			<location>/home/adrian/comp5421/build-phase1/project1_automoc.cpp</location>
+		</link>
+		<link>
 			<name>[Targets]/[exe] project1/Header Files</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] project1/Header Files/ui_mainwindow.h</name>
+			<type>1</type>
+			<location>/home/adrian/comp5421/build-phase1/ui_mainwindow.h</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] project1/CMake Rules</name>

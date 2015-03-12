@@ -22,31 +22,24 @@ class CVTool
 {
 public:
 
+		CVTool();
     CVTool(std::string path_to_image1, std::string path_to_image2);
     CVTool(const cv::Mat & image1, const cv::Mat & image2);
     /**
      * @brief detectFeatureSIFT takes an image and
      *
      */
-    void detectFeatureSIFT(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2);
-    void detectFeatureSURF(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2);
-    void detectFeatureMSER(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2);
-    void detectFeatureHaris(std::vector<cv::KeyPoint>& keypoints1, std::vector<cv::KeyPoint>& keypoints2);
+    void detectFeatureSIFT();
+    void detectFeatureSURF();
+    void detectFeatureMSER();
+    void detectFeatureHaris();
 
     /*
      * @brief for function 2.
      */
-    void matchFeatures(
-    		std::vector<cv::KeyPoint>& keypoints1,
-    		std::vector<cv::KeyPoint>& keypoints2,
-				cv::Mat& descriptors1, cv::Mat& descriptors2,
-				std::vector< std::vector<cv::DMatch> >& matches) ;
+    void matchFeatures();
 
-    void visualizeMatching(
-    		const std::vector<cv::KeyPoint>& keypoints1,
-        const std::vector<cv::KeyPoint>& keypoints2,
-        const std::vector< std::vector<cv::DMatch> >& matches,
-				cv::Mat& img_matches);
+    cv::Mat visualizeMatching();
 
     /**
      * @brief repairImage
@@ -76,47 +69,16 @@ protected:
     /**
       * You can add any protected function to help.
       */
-    double computeEuclideanDistance(cv::Point2f a, cv::Point2f b);
+    //double computeEuclideanDistance(cv::Point2f a, cv::Point2f b);
 
 protected:
     /**
      * @brief image1_, image2_ are the two input images for testing
      */
     cv::Mat image1_, image2_;
-/*
-    int 		m_sift_nfeatures;
-		int 		m_sift_nOctaveLayers;
-		double 	m_sift_contrastThreshold;
-		double 	m_sift_edgeThreshold;
-		double 	m_sift_sigma;
-    cv::SIFT::SIFT m_sift;
-
-    double 	m_surf_hessianThreshold;
-    int 		m_surf_nOctaves;
-    int 		m_surf_nOctaveLayers;
-    bool 		m_surf_extended;
-    bool 		m_surf_upright;
-    cv::SURF::SURF m_surf;
-
-    int 		m_mser_delta;
-    int 		m_mser_min_area;
-    int 		m_mser_max_area;
-    float 	m_mser_max_variation;
-    float 	m_mser_min_diversity;
-    int 		m_mser_max_evolution;
-    double 	m_mser_area_threshold;
-    double 	m_mser_min_margin;
-    int 		m_mser_edge_blur_size;
-    cv::MSER::MSER m_mser;
-
-    int m_harris_blockSize;
-		int m_harris_ksize;
-		double m_harris_k;
-		int m_harris_borderType;
-*/
-
-
-    cv::MserFeatureDetector m_mser;
+    std::vector<cv::KeyPoint> keypoints1_, keypoints2_;
+    cv::Mat descriptors1_, descriptors2_;
+    std::vector< std::vector<cv::DMatch> > matches_;
 };
 
 #endif // CVTOOL_H

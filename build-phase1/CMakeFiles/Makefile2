@@ -59,10 +59,10 @@ CMAKE_BINARY_DIR = /home/adrian/comp5421/build-phase1
 # Target rules for target CMakeFiles/project1.dir
 
 # All Build rule for target.
-CMakeFiles/project1.dir/all:
+CMakeFiles/project1.dir/all: CMakeFiles/project1_automoc.dir/all
 	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/depend
 	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/adrian/comp5421/build-phase1/CMakeFiles  1 2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/adrian/comp5421/build-phase1/CMakeFiles  1 2 3 4 5
 	@echo "Built target project1"
 .PHONY : CMakeFiles/project1.dir/all
 
@@ -72,7 +72,7 @@ all: CMakeFiles/project1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/project1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/comp5421/build-phase1/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/comp5421/build-phase1/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/project1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/comp5421/build-phase1/CMakeFiles 0
 .PHONY : CMakeFiles/project1.dir/rule
@@ -88,6 +88,37 @@ CMakeFiles/project1.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/project1.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/project1_automoc.dir
+
+# All Build rule for target.
+CMakeFiles/project1_automoc.dir/all:
+	$(MAKE) -f CMakeFiles/project1_automoc.dir/build.make CMakeFiles/project1_automoc.dir/depend
+	$(MAKE) -f CMakeFiles/project1_automoc.dir/build.make CMakeFiles/project1_automoc.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/adrian/comp5421/build-phase1/CMakeFiles  6
+	@echo "Built target project1_automoc"
+.PHONY : CMakeFiles/project1_automoc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/project1_automoc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/comp5421/build-phase1/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/project1_automoc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/comp5421/build-phase1/CMakeFiles 0
+.PHONY : CMakeFiles/project1_automoc.dir/rule
+
+# Convenience name for target.
+project1_automoc: CMakeFiles/project1_automoc.dir/rule
+.PHONY : project1_automoc
+
+# clean rule for target.
+CMakeFiles/project1_automoc.dir/clean:
+	$(MAKE) -f CMakeFiles/project1_automoc.dir/build.make CMakeFiles/project1_automoc.dir/clean
+.PHONY : CMakeFiles/project1_automoc.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/project1_automoc.dir/clean
 .PHONY : clean
 
 #=============================================================================

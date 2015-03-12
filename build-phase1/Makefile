@@ -114,6 +114,19 @@ project1/fast:
 	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/build
 .PHONY : project1/fast
 
+#=============================================================================
+# Target rules for targets named project1_automoc
+
+# Build rule for target.
+project1_automoc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 project1_automoc
+.PHONY : project1_automoc
+
+# fast build rule for target.
+project1_automoc/fast:
+	$(MAKE) -f CMakeFiles/project1_automoc.dir/build.make CMakeFiles/project1_automoc.dir/build
+.PHONY : project1_automoc/fast
+
 cvtool.o: cvtool.cpp.o
 .PHONY : cvtool.o
 
@@ -162,6 +175,54 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+project1_automoc.o: project1_automoc.cpp.o
+.PHONY : project1_automoc.o
+
+# target to build an object file
+project1_automoc.cpp.o:
+	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/project1_automoc.cpp.o
+.PHONY : project1_automoc.cpp.o
+
+project1_automoc.i: project1_automoc.cpp.i
+.PHONY : project1_automoc.i
+
+# target to preprocess a source file
+project1_automoc.cpp.i:
+	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/project1_automoc.cpp.i
+.PHONY : project1_automoc.cpp.i
+
+project1_automoc.s: project1_automoc.cpp.s
+.PHONY : project1_automoc.s
+
+# target to generate assembly for a file
+project1_automoc.cpp.s:
+	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/project1_automoc.cpp.s
+.PHONY : project1_automoc.cpp.s
+
+ui/mainwindow.o: ui/mainwindow.cpp.o
+.PHONY : ui/mainwindow.o
+
+# target to build an object file
+ui/mainwindow.cpp.o:
+	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/ui/mainwindow.cpp.o
+.PHONY : ui/mainwindow.cpp.o
+
+ui/mainwindow.i: ui/mainwindow.cpp.i
+.PHONY : ui/mainwindow.i
+
+# target to preprocess a source file
+ui/mainwindow.cpp.i:
+	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/ui/mainwindow.cpp.i
+.PHONY : ui/mainwindow.cpp.i
+
+ui/mainwindow.s: ui/mainwindow.cpp.s
+.PHONY : ui/mainwindow.s
+
+# target to generate assembly for a file
+ui/mainwindow.cpp.s:
+	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/ui/mainwindow.cpp.s
+.PHONY : ui/mainwindow.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -170,6 +231,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... project1"
+	@echo "... project1_automoc"
 	@echo "... rebuild_cache"
 	@echo "... cvtool.o"
 	@echo "... cvtool.i"
@@ -177,6 +239,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... project1_automoc.o"
+	@echo "... project1_automoc.i"
+	@echo "... project1_automoc.s"
+	@echo "... ui/mainwindow.o"
+	@echo "... ui/mainwindow.i"
+	@echo "... ui/mainwindow.s"
 .PHONY : help
 
 

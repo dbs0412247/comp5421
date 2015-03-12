@@ -308,11 +308,14 @@ ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
 
-//Value Computed by CMake
-build_dataset_BINARY_DIR:STATIC=/home/adrian/comp5421/build-phase1
+//The directory containing a CMake configuration file for Qt5Core.
+Qt5Core_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Core
 
-//Value Computed by CMake
-build_dataset_SOURCE_DIR:STATIC=/home/adrian/comp5421/phase1
+//The directory containing a CMake configuration file for Qt5Gui.
+Qt5Gui_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui
+
+//The directory containing a CMake configuration file for Qt5Widgets.
+Qt5Widgets_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets
 
 //Value Computed by CMake
 comp5421-p1_BINARY_DIR:STATIC=/home/adrian/comp5421/build-phase1
