@@ -1,14 +1,15 @@
+#ifndef CVTOOL_H
+#define CVTOOL_H
+
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
+#include <opencv2/calib3d/calib3d.hpp>
 #include <opencv2/features2d/features2d.hpp>
 #include <opencv2/nonfree/nonfree.hpp>
 #include <opencv2/nonfree/features2d.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <vector>
 #include <string>
-
-#ifndef CVTOOL_H
-#define CVTOOL_H
 
 
 /**
@@ -29,10 +30,10 @@ public:
      * @brief detectFeatureSIFT takes an image and
      *
      */
-    void detectFeatureSIFT();
-    void detectFeatureSURF();
-    void detectFeatureMSER();
-    void detectFeatureHaris();
+    void detectFeatureSIFT(bool isMask = false);
+    void detectFeatureSURF(bool isMask = false);
+    void detectFeatureMSER(bool isMask = false);
+    void detectFeatureHaris(bool isMask = false);
 
     /*
      * @brief for function 2.
@@ -49,7 +50,6 @@ public:
      */
     cv::Mat repairImage(const cv::Mat & damaged_img_a, const cv::Mat & complete_img_b);
 
-
     /**
      * @brief visualizeDiffence
      * @param repaired_img_a
@@ -61,15 +61,18 @@ public:
     /**
      * @brief for function 4.
      */
-    void computeFundMatrix();
+    cv::Mat computeFundMatrix(bool isUserInput);
 
-    void visualizeEpipolarLine();
+    cv::Mat visualizeEpipolarLine(const cv::Mat &fund);
 
 protected:
     /**
       * You can add any protected function to help.
       */
-    //double computeEuclideanDistance(cv::Point2f a, cv::Point2f b);
+    cv::Rect findDamagedRegion(const cv::Mat&);
+    cv::Mat createImage1MaskByColor(const cv::Scalar &color);
+    cv::Mat createImage2MaskByColor(const cv::Scalar &color);
+    cv::Mat getMask(const cv::Mat &img, cv::Scalar color = cv::Scalar(0,0,0));
 
 protected:
     /**
@@ -78,7 +81,7 @@ protected:
     cv::Mat image1_, image2_;
     std::vector<cv::KeyPoint> keypoints1_, keypoints2_;
     cv::Mat descriptors1_, descriptors2_;
-    std::vector< std::vector<cv::DMatch> > matches_;
+    std::vector<cv::DMatch> matches_;
 };
 
 #endif // CVTOOL_H

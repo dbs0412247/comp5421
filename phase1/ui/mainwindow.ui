@@ -2,98 +2,256 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>256</width>
-    <height>381</height>
+    <width>646</width>
+    <height>554</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>COMP5421 P1</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
-      <width>236</width>
-      <height>326</height>
+      <y>0</y>
+      <width>628</width>
+      <height>511</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QLineEdit" name="lineEdit_ImageDirectory">
-       <property name="placeholderText">
-        <string>Enter directory to images...</string>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_ImageDirectory">
+         <property name="placeholderText">
+          <string>Enter directory to images...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_LoadImagesFromDirectory">
+         <property name="acceptDrops">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Load Images</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Dataset: A &amp; B</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Dataset: C &amp; D</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Dataset: E &amp; F</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplaySIFT">
+         <property name="text">
+          <string>Display SIFT Results</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplaySIFT_2">
+         <property name="text">
+          <string>Display SIFT Results</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplaySIFT_3">
+         <property name="text">
+          <string>Display SIFT Results</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplaySURF">
+         <property name="text">
+          <string>Display SURF Results</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplaySURF_2">
+         <property name="text">
+          <string>Display SURF Results</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplaySURF_3">
+         <property name="text">
+          <string>Display SURF Results</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplayMSER">
+         <property name="text">
+          <string>Display MSER Results</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplayMSER_2">
+         <property name="text">
+          <string>Display MSER Results</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplayMSER_3">
+         <property name="text">
+          <string>Display MSER Results</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplayHARRIS">
+         <property name="text">
+          <string>Display HARRIS Results</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplayHARRIS_2">
+         <property name="text">
+          <string>Display HARRIS Results</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplayHARRIS_3">
+         <property name="text">
+          <string>Display HARRIS Results</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplayRepair">
+         <property name="text">
+          <string>Repair Damaged Image</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplayRepair_2">
+         <property name="text">
+          <string>Repair Damaged Image</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplayRepair_3">
+         <property name="text">
+          <string>Repair Damaged Image</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Using rotation and translation datasets</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_loadImagesFromDirectory">
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplayFund7">
+         <property name="text">
+          <string>Fundamental matrix with 7 pts</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_DisplayFund8">
+         <property name="text">
+          <string>Fundamental matrix with &gt;8 pts</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Status:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="textEdit_DisplayStatus">
        <property name="acceptDrops">
         <bool>false</bool>
        </property>
-       <property name="text">
-        <string>Load Images</string>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_DisplaySIFT">
-       <property name="text">
-        <string>Display SIFT Results</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_DisplaySURF">
-       <property name="text">
-        <string>Display SURF Results</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_DisplayMSER">
-       <property name="text">
-        <string>Display MSER Results</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_DisplayHARRIS">
-       <property name="text">
-        <string>Display HARRIS Results</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_DisplayRepair">
-       <property name="text">
-        <string>Repair Damaged Image</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_DisplayFund8">
-       <property name="text">
-        <string>Fundamental matrix with &gt;8 pts</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_DisplayFund8Epi">
-       <property name="text">
-        <string>Draw Epipolar Lines</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_DisplayFund7">
-       <property name="text">
-        <string>Fundamental matrix with 7 pts</string>
+       <property name="readOnly">
+        <bool>true</bool>
        </property>
       </widget>
      </item>

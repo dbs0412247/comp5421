@@ -3,6 +3,8 @@
 
 CMakeFiles/project1.dir/cvtool.cpp.o: /home/adrian/comp5421/phase1/cvtool.cpp
 CMakeFiles/project1.dir/cvtool.cpp.o: /home/adrian/comp5421/phase1/cvtool.h
+CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/calib3d/calib3d.hpp
+CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/core/affine.hpp
 CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/core/core.hpp
 CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/core/core_c.h
 CMakeFiles/project1.dir/cvtool.cpp.o: /usr/local/include/opencv2/core/mat.hpp
@@ -141,6 +143,8 @@ CMakeFiles/project1.dir/main.cpp.o: /usr/include/qt5/QtWidgets/qmainwindow.h
 CMakeFiles/project1.dir/main.cpp.o: /usr/include/qt5/QtWidgets/qsizepolicy.h
 CMakeFiles/project1.dir/main.cpp.o: /usr/include/qt5/QtWidgets/qtabwidget.h
 CMakeFiles/project1.dir/main.cpp.o: /usr/include/qt5/QtWidgets/qwidget.h
+CMakeFiles/project1.dir/main.cpp.o: /usr/local/include/opencv2/calib3d/calib3d.hpp
+CMakeFiles/project1.dir/main.cpp.o: /usr/local/include/opencv2/core/affine.hpp
 CMakeFiles/project1.dir/main.cpp.o: /usr/local/include/opencv2/core/core.hpp
 CMakeFiles/project1.dir/main.cpp.o: /usr/local/include/opencv2/core/core_c.h
 CMakeFiles/project1.dir/main.cpp.o: /usr/local/include/opencv2/core/mat.hpp
@@ -273,6 +277,8 @@ CMakeFiles/project1.dir/project1_automoc.cpp.o: /usr/include/qt5/QtWidgets/qmain
 CMakeFiles/project1.dir/project1_automoc.cpp.o: /usr/include/qt5/QtWidgets/qsizepolicy.h
 CMakeFiles/project1.dir/project1_automoc.cpp.o: /usr/include/qt5/QtWidgets/qtabwidget.h
 CMakeFiles/project1.dir/project1_automoc.cpp.o: /usr/include/qt5/QtWidgets/qwidget.h
+CMakeFiles/project1.dir/project1_automoc.cpp.o: /usr/local/include/opencv2/calib3d/calib3d.hpp
+CMakeFiles/project1.dir/project1_automoc.cpp.o: /usr/local/include/opencv2/core/affine.hpp
 CMakeFiles/project1.dir/project1_automoc.cpp.o: /usr/local/include/opencv2/core/core.hpp
 CMakeFiles/project1.dir/project1_automoc.cpp.o: /usr/local/include/opencv2/core/core_c.h
 CMakeFiles/project1.dir/project1_automoc.cpp.o: /usr/local/include/opencv2/core/mat.hpp
@@ -404,6 +410,7 @@ CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtGui/qpolygon.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtGui/qregion.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtGui/qrgb.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtGui/qtextcursor.h
+CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtGui/qtextdocument.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtGui/qtextformat.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtGui/qtextoption.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtGui/qtouchdevice.h
@@ -415,11 +422,14 @@ CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtGui/qwindowdefs_
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/QAction
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/QApplication
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/QButtonGroup
+CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/QHBoxLayout
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/QHeaderView
+CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/QLabel
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/QLineEdit
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/QMainWindow
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/QPushButton
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/QStatusBar
+CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/QTextEdit
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/QToolBar
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/QVBoxLayout
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/QWidget
@@ -438,6 +448,7 @@ CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/qdesktop
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/qframe.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/qgridlayout.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/qheaderview.h
+CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/qlabel.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/qlayout.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/qlayoutitem.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/qlineedit.h
@@ -451,8 +462,11 @@ CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/qstyle.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/qstyleoption.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/qtabbar.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/qtabwidget.h
+CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/qtextedit.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/qtoolbar.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/include/qt5/QtWidgets/qwidget.h
+CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/local/include/opencv2/calib3d/calib3d.hpp
+CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/local/include/opencv2/core/affine.hpp
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/local/include/opencv2/core/core.hpp
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/local/include/opencv2/core/core_c.h
 CMakeFiles/project1.dir/ui/mainwindow.cpp.o: /usr/local/include/opencv2/core/mat.hpp
