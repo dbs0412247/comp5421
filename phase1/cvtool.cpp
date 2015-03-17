@@ -2,6 +2,7 @@
 
 // Debug
 #include <iostream>
+#include <iomanip>
 
 using namespace cv;
 using namespace std;
@@ -127,8 +128,8 @@ Mat CVTool::visualizeMatching()
 	CV_Assert(!matches_.empty());
 	Mat img_matches, img_kpt1, img_kpt2;
 	drawMatches( image1_, keypoints1_, image2_, keypoints2_, matches_, img_matches);
-	drawKeypoints(image1_, keypoints1_, img_kpt1, Scalar::all(-1), DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
-	drawKeypoints(image2_, keypoints2_, img_kpt2, Scalar::all(-1), DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
+	drawKeypoints(image1_, keypoints1_, img_kpt1);
+	drawKeypoints(image2_, keypoints2_, img_kpt2);
 	Mat img_out (img_matches.rows*2, img_matches.cols, img_matches.type());
 	Rect top_roi (0,0,img_matches.cols,img_matches.rows);
 	Rect bot_left_roi (0,img_matches.rows,img_kpt1.cols,img_kpt1.rows);
@@ -146,7 +147,10 @@ Mat CVTool::repairImage(const Mat &damaged_img_a, const Mat &complete_img_b)
 	image2_ = complete_img_b;
 	cout << "Repairing images" << endl;
 	// detect points and match for calculating homography
+	//detectFeatureSIFT();
 	detectFeatureSURF();
+	//detectFeatureMSER();
+	//detectFeatureHaris();
 	matchFeatures();
 	cout << "Done matching" << endl;
 	// extract point2f array from matches
@@ -186,6 +190,14 @@ void CVTool::visualizeDiffence(const Mat &repaired_img_a, const Mat &complete_im
 	repaired_img_a.copyTo(output(roi_left));
 	complete_img_a.copyTo(output(roi_right));
 	imshow("Repaired (left) vs Original (right)", output);
+
+	// Calculate differences
+	Mat diff;
+	absdiff(repaired_img_a, complete_img_a, diff);
+	pow(diff, 2, diff);
+	Scalar total_sq_diff = sum(diff);
+	double ave = (total_sq_diff[0]+total_sq_diff[1]+total_sq_diff[2]) / 3;
+	cout << "Total square difference = " << total_sq_diff << " -> " << fixed << ave << endl;
 }
 
 Mat CVTool::computeFundMatrix(bool isUserInput)

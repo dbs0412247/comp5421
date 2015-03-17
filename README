@@ -1,0 +1,12 @@
+Directory structure of COMP5421 Project 1
+
+[root directory]/
+  phase1/             (contains source code and CMakeLists.txt)
+  phase1/ui/          (contains UI files)
+  phase1-data/        (contains data: given dataset and two additional dataset)
+  phase1-report.pdf   (project report)
+[end]
+
+Adrian Yuen
+20029090
+hcayuen
